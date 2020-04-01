@@ -1,6 +1,6 @@
 // Configure the Google Cloud provider
 provider "google" {
- credentials = file("/var/lib/jenkins/credentials.json")
+ credentials = file(var.credentials)
  project     = var.project
  region      = var.region
 }
